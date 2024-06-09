@@ -11,6 +11,14 @@ spring:
       enabled: true #콘솔 활성화
       path: /h2-console #웹 콘솔 주소 예(127.0.0.1:8080/h2-console) 기본으로 외부 ip접근은 막고 있다
 
+  ai:
+    openai:
+      api-key: sk-proj-jIxPtyf820tOfjZPU8fRT3BlbkFJj4cSpBcHfWiqQuMOoInL
+      chat.options.model: gpt-4o
+      chat.options.temperature: 0 #창의 성
+
+
+
   jpa:
     hibernate:
       ddl-auto: create
@@ -24,3 +32,4 @@ logging:
     org.hibernate.SQL: debug
 server:
   port: 8080
+
