@@ -1,0 +1,26 @@
+
+
+spring:
+  datasource: #내장 메모리 db를 사용하기위해 주소 설정
+    url: jdbc:h2:mem:db   # jdbc:h2:tcp://localhost/~/typewriter
+    username: sa
+    password: "1234"
+    driver-class-name: org.h2.Driver
+  h2: #스프링부트에 내장 데이터 베이스 사용
+    console:
+      enabled: true #콘솔 활성화
+      path: /h2-console #웹 콘솔 주소 예(127.0.0.1:8080/h2-console) 기본으로 외부 ip접근은 막고 있다
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+  application:
+    name: unityServer
+logging:
+  level:
+    org.hibernate.SQL: debug
+server:
+  port: 8080
