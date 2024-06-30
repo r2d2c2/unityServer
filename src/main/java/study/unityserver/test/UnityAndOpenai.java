@@ -1,14 +1,10 @@
-package study.unityserver.controller;
+package study.unityserver.test;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.ai.openai.OpenAiChatModel;
-import org.springframework.ai.openai.api.OpenAiApi;
 import org.springframework.web.bind.annotation.*;
-import study.unityserver.dto.ChatDataDTO;
 import study.unityserver.repository.Openai_logRepository;
-
-import java.util.concurrent.ExecutorService;
 
 @RestController
 @RequiredArgsConstructor

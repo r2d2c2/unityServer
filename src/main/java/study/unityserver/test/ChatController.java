@@ -1,4 +1,4 @@
-package study.unityserver.controller;
+package study.unityserver.test;
 
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatResponse;
@@ -15,6 +15,7 @@ import java.util.Map;
 @RestController
 public class ChatController {
 
+    //openai test
     private final OpenAiChatModel chatModel;
 
     @Autowired

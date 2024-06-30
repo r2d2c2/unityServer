@@ -1,6 +1,13 @@
 
 
 spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      # 한번에 업로드 할수 있는 최대 사이즈
+      max-request-size: 30MB
+
+
   datasource: #내장 메모리 db를 사용하기위해 주소 설정
     url: jdbc:h2:mem:db   # jdbc:h2:tcp://localhost/~/typewriter
     username: sa
@@ -33,3 +40,13 @@ logging:
 server:
   port: 8080
 
+
+
+# 업로드 사이즈 제한 (하나의 사이즈)
+
+
+# save img
+files_dir: /home/cjftn/my_files/ #\\home\\cjftn\\IdeaProjects\\unityServer\\src\\main\\resources\\files\\ #//home//cjftn//IdeaProjects//unityServer//src//main//resources//files//
+#my_files: /home/cjftn/IdeaProjects/unityServer/src/main/resources/files/
+
+filedir: /home/cjftn/IdeaProjects/unityServer/src/main/resources/files/
